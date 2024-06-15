@@ -22,8 +22,8 @@ body{
 /* will effect the cubes created */
 .sketchPad div{
     /* border: 3px solid orange; */
-    width: 0.2em;
-    height: 0.2em;
+    width: 1em;
+    height: 1em;
     
 }
 

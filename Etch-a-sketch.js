@@ -46,7 +46,7 @@ let penStyle = defaultPen;//need to give it an initial color or nothing happens 
 
 
 //create all the tiles
-for(let numTiles=0; numTiles<100000; numTiles++){
+for(let numTiles=0; numTiles<5000; numTiles++){
     let sketchPad = document.querySelector(".sketchPad");
     let div = document.createElement("div");
     div.id = `div${numTiles}`;
@@ -85,6 +85,8 @@ sketchPad.addEventListener("mouseover",(e)=>{
         // tile.setAttribute("style","backgroundColor:red;")
     }
 })
+
+/
 
 
 //changing pens & eraser
