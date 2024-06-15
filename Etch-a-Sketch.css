@@ -17,8 +17,9 @@ body{
     width: 80vw;
     border: 1em solid red;
 }
+/* will effect the cubes created */
 .sketchPad div{
-    border: 3px solid orande;
+    border: 3px solid orange;
     width: 1em;
     height: 1em;
     
@@ -42,4 +43,9 @@ body {
     flex-flow: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.sketchPad{
+    display: flex;
+    flex-flow: row wrap;
 }
