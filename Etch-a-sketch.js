@@ -25,3 +25,36 @@ for(let numTiles=0; numTiles<1501; numTiles++){
 }
 
 let isMouseDown =false;
+
+//event listeners
+sketchPad.addEventListener("mousedown", (e)=>{
+    isMouseDown = true;
+
+    //so the first tile pressed also gets changed
+    let target = e.target;
+    let targetID = target.id//this will give me the element its over
+    let tile = document.querySelector(`#${targetID}`);
+    tile.style.backgroundColor = "red";
+    // tile.setAttribute("style","backgroundColor:red;")
+
+
+})
+
+sketchPad.addEventListener("mouseup", ()=>{
+
+    isMouseDown = false;
+})
+
+
+sketchPad.addEventListener("mouseover",(e)=>{
+
+    if (isMouseDown===true){
+        let target = e.target;
+        let targetID = target.id//this will give me the element its over
+        let tile = document.querySelector(`#${targetID}`);
+        tile.style.backgroundColor = "red";
+        // tile.setAttribute("style","backgroundColor:red;")
+    }
+})
+
+
