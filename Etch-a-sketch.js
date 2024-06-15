@@ -46,7 +46,7 @@ let penStyle = defaultPen;//need to give it an initial color or nothing happens 
 
 
 //create all the tiles
-for(let numTiles=0; numTiles<1501; numTiles++){
+for(let numTiles=0; numTiles<100000; numTiles++){
     let sketchPad = document.querySelector(".sketchPad");
     let div = document.createElement("div");
     div.id = `div${numTiles}`;
