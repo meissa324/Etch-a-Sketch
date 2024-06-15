@@ -13,9 +13,11 @@ body{
 }
 
 .sketchPad{
-    height: 60vh;
-    width: 80vw;
+    height: auto;
+    max-width: 80vw;
     border: 1em solid red;
+    justify-content: center;
+    align-items: center;
 }
 /* will effect the cubes created */
 .sketchPad div{
